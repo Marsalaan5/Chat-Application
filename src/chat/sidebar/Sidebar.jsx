@@ -2,6 +2,8 @@ import Header from "./Header";
 import React from "react";
 import { Box, Tabs, Tab, Typography,List,ListItem,ListItemAvatar,Avatar,ListItemText,Divider} from "@mui/material";
 import { useState } from "react";
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 
@@ -19,27 +21,29 @@ function Sidebar() {
     { id: 1, name: "Mohammad Rashid", secondaryText: "Ali Connors", avatarSrc: "/static/images/avatar/1.jpg" },
     { id: 2, name: "John Doe", secondaryText: "Sandra Adams", avatarSrc: "/static/images/avatar/2.jpg" },
     { id: 3, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 4, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 5, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 6, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 7, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 8, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 9, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
-    { id: 10, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
+    
     
   ];
   return (
     <Box sx={{ width: "25vw", display:'flex', flexDirection:'column',height:'100vh'}}>
       <Header />
       <Tabs
+      
         fullwidth
         value={value}
         onChange={handleChange}
         aria-label="basic tabs example"
         centered
       >
-        <Tab label="Chat List"></Tab>
-        <Tab label="User List"></Tab>
+        <Tab icon={<ChatBubbleOutlineIcon/>}
+        fontSize='small'
+        iconPosition="start"
+        label="Chat List"></Tab>
+        <Tab 
+        icon={<PersonIcon/>}
+        fontSize='small'
+        iconPosition="start"
+        label="User List"></Tab>
 
         </Tabs>
         {value === 0 && (

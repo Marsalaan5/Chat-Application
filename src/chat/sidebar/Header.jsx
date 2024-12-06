@@ -1,12 +1,13 @@
 import { Card,CardHeader,Avatar,IconButton, Typography } from "@mui/material";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { red } from '@mui/material/colors';
+import { red,green } from '@mui/material/colors';
+
 
 
 function Header() {
   return (
     
-     <Card   sx={{ bgcolor:'primary.light' , borderRadius:0,color:'primary.contrastText'}}>
+     <Card   sx={{  bgcolor: green[500] , borderRadius:0}}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
