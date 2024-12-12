@@ -21,6 +21,15 @@ function Sidebar() {
     { id: 1, name: "Mohammad Rashid", secondaryText: "Ali Connors", avatarSrc: "/static/images/avatar/1.jpg" },
     { id: 2, name: "John Doe", secondaryText: "Sandra Adams", avatarSrc: "/static/images/avatar/2.jpg" },
     { id: 3, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
+    { id: 4, name: "Mohammad Rashid", secondaryText: "Ali Connors", avatarSrc: "/static/images/avatar/1.jpg" },
+    { id: 5, name: "John Doe", secondaryText: "Sandra Adams", avatarSrc: "/static/images/avatar/2.jpg" },
+    { id: 6, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
+    { id: 7, name: "Mohammad Rashid", secondaryText: "Ali Connors", avatarSrc: "/static/images/avatar/1.jpg" },
+    { id: 8, name: "John Doe", secondaryText: "Sandra Adams", avatarSrc: "/static/images/avatar/2.jpg" },
+    { id: 9, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
+    { id: 10, name: "Mohammad Rashid", secondaryText: "Ali Connors", avatarSrc: "/static/images/avatar/1.jpg" },
+    { id: 11, name: "John Doe", secondaryText: "Sandra Adams", avatarSrc: "/static/images/avatar/2.jpg" },
+    { id: 12, name: "Jane Smith", secondaryText: "Robert Brown", avatarSrc: "/static/images/avatar/3.jpg" },
     
     
   ];
@@ -29,7 +38,7 @@ function Sidebar() {
       <Header />
       <Tabs
       
-        fullwidth
+        // fullwidth
         value={value}
         onChange={handleChange}
         aria-label="basic tabs example"

@@ -85,7 +85,7 @@ function ChatArea() {
             <Paper sx={{ width: "100%", p: 1.5, bgcolor: "#ccc" }}>
               <ListItemText
                 sx={{ m: 0 }}
-                primary="Arsalaan Rashid"
+                primary="John Doe"
                 secondary={
                   <Typography component="span" variant="caption">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
