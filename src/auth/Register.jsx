@@ -13,7 +13,7 @@ function Register(){
           <Paper
             square
             sx={{
-              bgcolor: "primary.main",
+              bgcolor: "lightcoral",
               color: "primary.contrastText",
               height:'100%',
               display:'flex',
@@ -115,7 +115,7 @@ function Register(){
           /> */}
           <Button 
           fullWidth 
-          variant="contained" sx={{py:2}}
+          variant="contained" sx={{py:2,bgcolor:'lightcoral'}}
           >
             Register
           </Button>

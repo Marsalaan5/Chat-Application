@@ -13,7 +13,7 @@ function Login() {
           <Paper
             square
             sx={{
-              bgcolor: "primary.main",
+              bgcolor: "lightcoral",
               color: "primary.contrastText",
               height:'100%',
               display:'flex',
@@ -100,7 +100,7 @@ function Login() {
           />
           <Button 
           fullWidth 
-          variant="contained" sx={{py:2}}
+          variant="contained" sx={{py:2,bgcolor:'lightcoral'}}
           >
             Login
           </Button>
